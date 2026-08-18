@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Deepak Kumar</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/portfolio/logo.jpg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --brand: #149ddd;
+      --brand-deep: #0d6efd;
+      --ink: #1f2a37;
+      --muted: #5f6f7f;
+      --soft: #f4f8fb;
+      --card-bg: #ffffff;
+      --border: rgba(17, 24, 39, 0.08);
+      --shadow: 0 18px 45px rgba(15, 23, 42, 0.10);
+    }
+
+    body {
+      background: #f5f7fb;
+      color: var(--ink);
+      font-family: "Poppins", sans-serif;
+    }
+
+    a {
+      transition: all 0.3s ease;
+    }
+
+    .main {
+      background: linear-gradient(180deg, #f9fbff 0%, #f3f6fb 100%);
+    }
+
+    .section-title {
+      margin-bottom: 2.3rem;
+    }
+
+    .section-title h2 {
+      font-size: clamp(2rem, 3vw, 2.6rem);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      color: #173b6c;
+      margin-bottom: 0.7rem;
+      position: relative;
+      display: inline-block;
+    }
+
+    .section-title h2::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: linear-gradient(90deg, var(--brand), var(--brand-deep));
+      border-radius: 999px;
+      margin-top: 0.9rem;
+    }
+
+    .section-title p,
+    .section-title h3 {
+      color: var(--muted);
+      font-weight: 400;
+      line-height: 1.7;
+    }
+
+    #header {
+      box-shadow: 0 8px 30px rgba(15, 23, 42, 0.08);
+    }
+
+    .profile-img img {
+      border: 4px solid rgba(255, 255, 255, 0.25);
+      box-shadow: 0 18px 35px rgba(0, 0, 0, 0.18);
+    }
+
+    .profile-img {
+      background: linear-gradient(135deg, rgba(20, 157, 221, 0.3), rgba(13, 110, 253, 0.25));
+      padding: 0.5rem;
+      border-radius: 50%;
+    }
+
+    .logo .sitename {
+      color: #fff;
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .navmenu a {
+      border-radius: 12px;
+      margin: 0.2rem 0;
+      padding: 0.75rem 0.9rem;
+      color: rgba(255, 255, 255, 0.78);
+      font-weight: 500;
+      transition: all 0.25s ease;
+    }
+
+    .navmenu a:hover,
+    .navmenu a.active {
+      background: rgba(255, 255, 255, 0.08);
+      color: #fff;
+      transform: translateX(4px);
+    }
+
+    .navmenu a .navicon {
+      margin-right: 0.75rem;
+      font-size: 1rem;
+    }
+
+    .hero {
+      position: relative;
+      min-height: 650px;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(135deg, rgba(10, 18, 32, 0.85), rgba(20, 157, 221, 0.7));
+      overflow: hidden;
+    }
+
+    .hero > img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.25;
+      filter: blur(2px) saturate(0.6);
+    }
+
+    .hero .container {
+      position: relative;
+      z-index: 1;
+      max-width: 820px;
+      padding: 3rem 1rem;
+      color: #fff;
+    }
+
+    .hero h2 {
+      font-size: clamp(2.4rem, 5vw, 4rem);
+      line-height: 1.1;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      color: #fff;
+      letter-spacing: -0.04em;
+    }
+
+    .hero h4 {
+      color: rgba(255, 255, 255, 0.9) !important;
+      font-size: clamp(1.1rem, 2vw, 1.5rem);
+      line-height: 1.6;
+      font-weight: 400;
+      margin: 0.4rem 0;
+    }
+
+    .about .content h2 {
+      font-size: clamp(1.6rem, 2vw, 2.1rem);
+      color: #173b6c;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .about .content ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .about .content li {
+      margin: 0.9rem 0;
+      color: var(--ink);
+      font-size: 0.98rem;
+    }
+
+    .about .content li strong {
+      color: #173b6c;
+    }
+
+    .about .content li i {
+      color: var(--brand);
+      margin-right: 0.5rem;
+    }
+
+    .about .content .py-5 {
+      padding-top: 1.5rem !important;
+      padding-bottom: 0 !important;
+      color: var(--ink);
+      font-size: 1.05rem;
+    }
+
+    .skills .progress {
+      background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 24px 22px 20px;
+      margin-bottom: 22px;
+      box-shadow: var(--shadow);
+      height: auto;
+      overflow: visible;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .skills .progress:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 22px 45px rgba(15, 23, 42, 0.12);
+    }
+
+    .skills .progress .skill {
+      display: block;
+      margin-bottom: 12px;
+    }
+
+    .skills .progress .skill h3 {
+      margin: 0;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #173b6c;
+      line-height: 1.4;
+    }
+
+    .skills .progress > div {
+      width: 100%;
+    }
+
+    .skills .progress ul {
+      list-style: disc;
+      padding-left: 1.35rem;
+      margin: 0;
+      display: block;
+      width: 100%;
+    }
+
+    .skills .progress ul li {
+      display: list-item;
+      visibility: visible;
+      opacity: 1;
+      font-size: 0.98rem;
+      line-height: 1.8;
+      color: #2b2b2b;
+      margin: 4px 0;
+      list-style-position: outside;
+    }
+
+    .skills .progress ul li em {
+      font-style: italic;
+      color: #4b5563;
+    }
+
+    .resume .resume-item,
+    .portfolio-content,
+    .service-item,
+    .info-wrap {
+      background: rgba(255, 255, 255, 0.92);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+    }
+
+    .resume .resume-item {
+      position: relative;
+      padding: 26px 22px;
+      margin-bottom: 22px;
+      transition: transform 0.25s ease;
+    }
+
+    .resume .resume-item:hover {
+      transform: translateY(-3px);
+    }
+
+    .resume-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #173b6c;
+      margin-bottom: 1.1rem;
+    }
+
+    .resume-item h4 {
+      color: #173b6c;
+      font-weight: 700;
+      margin-bottom: 0.8rem;
+    }
+
+    .resume-item h5 {
+      font-size: 0.9rem;
+      background: rgba(20, 157, 221, 0.08);
+      color: var(--brand-deep);
+      border-radius: 999px;
+      display: inline-block;
+      padding: 0.45rem 0.8rem;
+      font-weight: 600;
+      margin: 0.2rem 0 0.9rem;
+    }
+
+    .resume-item p,
+    .resume-item li {
+      color: #3f4b5a;
+      line-height: 1.8;
+    }
+
+    .resume-item ul {
+      padding-left: 1.1rem;
+      margin: 1rem 0 0;
+    }
+
+    .resume-item li + li {
+      margin-top: 0.45rem;
+    }
+
+    .portfolio-content {
+      overflow: hidden;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .portfolio-content:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 22px 45px rgba(15, 23, 42, 0.14);
+    }
+
+    .portfolio-content img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .portfolio-info {
+      padding: 1.25rem 1.2rem 1.35rem;
+    }
+
+    .portfolio-info h4 {
+      color: #173b6c;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .portfolio-info p {
+      color: #4a596b;
+      line-height: 1.7;
+      margin-bottom: 0.6rem;
+    }
+
+    .portfolio-info ul {
+      margin: 0.8rem 0 0;
+      padding-left: 1.1rem;
+      color: #2d3b48;
+      line-height: 1.7;
+    }
+
+    .service-item {
+      padding: 1.4rem 1.2rem;
+      align-items: flex-start;
+      gap: 1rem;
+      transition: transform 0.25s ease;
+    }
+
+    .service-item:hover {
+      transform: translateY(-4px);
+    }
+
+    .service-item .icon {
+      width: 58px;
+      height: 58px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, rgba(20, 157, 221, 0.15), rgba(13, 110, 253, 0.12));
+      color: var(--brand-deep);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+
+    .service-item .title {
+      color: #173b6c;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .service-item .description {
+      color: #4d5869;
+      margin: 0;
+      line-height: 1.7;
+    }
+
+    .info-wrap {
+      padding: 1.4rem;
+    }
+
+    .info-item {
+      padding: 1rem 0.8rem;
+      border-radius: 16px;
+      background: rgba(20, 157, 221, 0.02);
+      border: 1px solid rgba(20, 157, 221, 0.08);
+      transition: background 0.25s ease;
+    }
+
+    .info-item:hover {
+      background: rgba(20, 157, 221, 0.04);
+    }
+
+    .info-item i {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, rgba(20, 157, 221, 0.15), rgba(13, 110, 253, 0.12));
+      color: var(--brand-deep);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      margin-right: 0.9rem;
+    }
+
+    .info-item h3 {
+      font-size: 1.05rem;
+      color: #173b6c;
+      margin-bottom: 0.35rem;
+      font-weight: 700;
+    }
+
+    .info-item p {
+      margin: 0;
+      color: #465468;
+      line-height: 1.6;
+    }
+
+    .footer {
+      border-top: 1px solid rgba(23, 59, 108, 0.08);
+    }
+
+    @media (max-width: 991px) {
+      .skills .progress {
+        padding: 18px 16px;
+      }
+
+      .hero {
+        min-height: 540px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .hero .container {
+        padding-top: 4.5rem;
+      }
+
+      .service-item {
+        flex-direction: row;
+      }
+
+      .portfolio-content img {
+        height: 200px;
+      }
+    }
+  </style>
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename">Deepak Kumar</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="https://github.com/deepak6988" class="github"><i class="bi bi-github"></i></a>
+      <a href="https://www.instagram.com/ig_deepak13" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/deepak5402" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#skills"><i class="bi bi-code navicon"></i> Skills</a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Projects</a></li>
+        <li><a href="#certificates"><i class="bi bi-award navicon"></i> Certificates</a></li>
+
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/hero-bg.jpg" alt="Profile background" data-aos="fade-in" class="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100" style="color:white; text-shadow: 0 2px 8px rgba(0,0,0,0.3);">
+        <h2>Hi, I'm Deepak Kumar</h2>
+        <h4 style="color:rgba(255,255,255,0.95)">Software Developer | Full-Stack Developer | AI Enthusiast</h4>
+        <h4 style="color:rgba(255,255,255,0.9)">I build scalable web applications and AI-powered solutions using modern technologies.
+        </h4>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About me</h2>
+        <p>Software Development Engineer with hands-on experience in designing and developing full-stack web applications using React.js, Node.js, Express.js, MongoDB, and MySQL. Strong foundation in Data Structures & Algorithms, Object-Oriented Programming, and RESTful API development, with experience building end-to-end software solutions independently.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="Deepak Kumar profile" style="border: 5px solid black; border-radius: 8px;">
+          </div>
+          <div class="col-lg-8 content">
+            <h2>Software Developer | Full-Stack Developer | AI Enthusiast</h2>
+            <p></p>
+
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>LinkedIn:</strong> <span>linkedin.com/in/deepak5402</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 6200468014</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Hyderabad, Telangana</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>GitHub:</strong> <span>github.com/deepak6988</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>24</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor of Science in Information Technology</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>deepakumar6988@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Location:</strong> <span>Marwari College Ranchi, Jharkhand</span></li>
+                </ul>
+              </div>
+            </div>
+            <p class="py-5">
+              <b>I'm always eager to learn, build, and take on challenging problems that create meaningful real-world impact.</b>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section light-background">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row skills-content skills-animation">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><h3>Programming Languages</h3></span>
+              <div>
+                <ul>
+                  <li>Java</li>
+                  <li>JavaScript</li>
+                  <li>C++</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"><h3>Frontend Development</h3></span>
+              <div>
+                <ul>
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>Bootstrap</li>
+                  <li>React.js</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"><h3>Backend Development</h3></span>
+              <div>
+                <ul>
+                  <li>Node.js</li>
+                  <li>Express.js</li>
+                  <li>REST APIs</li>
+                  <li>JWT Authentication</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><h3>Databases</h3></span>
+              <div>
+                <ul>
+                  <li>MongoDB</li>
+                  <li>MySQL</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"><h3>Developer Tools</h3></span>
+              <div>
+                <ul>
+                  <li>Git</li>
+                  <li>GitHub</li>
+                  <li>Postman</li>
+                  <li>VS Code</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"><h3>Core Computer Science</h3></span>
+              <div>
+                <ul>
+                  <li>Data Structures & Algorithms</li>
+                  <li>Object-Oriented Programming (OOP)</li>
+                  <li>DBMS</li>
+                  <li>Operating Systems</li>
+                  <li>Computer Networks</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <h3>A quick overview of my professional experience, education, skills, and achievements.</h3>
+      </div>
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Professional Summary</h3>
+
+            <div class="resume-item pb-0">
+              <h4>Deepak Kumar</h4>
+              <p><em>Software Development Engineer with hands-on experience in designing and developing full-stack web applications using React.js, Node.js, Express.js, MongoDB, and MySQL. Strong foundation in Data Structures & Algorithms, Object-Oriented Programming, and RESTful API development, with experience building end-to-end software solutions independently.</em></p>
+              <ul>
+                <li>Hyderabad, Telangana</li>
+                <li>+91 6200468014</li>
+                <li>deepakumar6988@gmail.com</li>
+                <li>linkedin.com/in/deepak5402</li>
+                <li>github.com/deepak6988</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Bachelor of Science in Information Technology</h4>
+              <h5>09/2021 – 06/2024</h5>
+              <p><em>Marwari College Ranchi, Jharkhand</em></p>
+              <p>CGPA: 8.6/10</p>
+            </div>
+            <div class="resume-item">
+              <h4>Intermediate in Science</h4>
+              <h5>09/2019 – 04/2021</h5>
+              <p><em>Marwari College Ranchi, Jharkhand</em></p>
+              <p>CGPA: 8.4/10</p>
+            </div>
+            <div class="resume-item">
+              <h4>Matriculation</h4>
+              <h5>06/2019</h5>
+              <p><em>Marwari College Ranchi, Jharkhand</em></p>
+              <p>95%</p>
+            </div>
+
+            <h3 class="resume-title">Achievements</h3>
+            <div class="resume-item">
+              <ul>
+                <li>Solved 100+ Data Structures and Algorithms problems across LeetCode and GeeksforGeeks.</li>
+                <li>Awarded Best Performer of the Month at Tata Consultancy Services for consistently achieving quality and performance targets.</li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Software Development Intern</h4>
+              <h5>04/2024 – 06/2024</h5>
+              <p><em>CITC, Ranchi, Jharkhand</em></p>
+              <ul>
+                <li><strong>Frontend Web Development:</strong> Built responsive user interfaces using HTML5, CSS3, JavaScript, and Bootstrap, ensuring consistent cross-browser performance.</li>
+                <li><strong>Component Optimization:</strong> Streamlined client-side scripts and DOM manipulation logic to enhance page layout rendering and interactive performance.</li>
+                <li><strong>Quality Assurance & Maintenance:</strong> Conducted cross-device UI testing and code optimization using Chrome Developer Tools and Git, successfully eliminating key responsiveness issues.</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>Software Development Intern</h4>
+              <h5>01/2024 – 02/2024</h5>
+              <p><em>Octanet Services Pvt. Ltd., Remote</em></p>
+              <ul>
+                <li><strong>Web Application Development:</strong> Designed and built responsive, interactive web applications using JavaScript, HTML5, CSS3, and Bootstrap, ensuring seamless across-device compatibility.</li>
+                <li><strong>API Integration & Logic:</strong> Implemented client-side routing, DOM manipulation, and dynamic API integrations to handle real-time data rendering and improve application load times.</li>
+                <li><strong>Code Optimization & Testing:</strong> Conducted frontend debugging and code reviews using Git and Chrome Developer Tools, reducing bug reports during usability testing.</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>Analyst</h4>
+              <h5>11/2024 – Present</h5>
+              <p><em>Tata Consultancy Services, Hyderabad, Telangana</em></p>
+              <ul>
+                <li><strong>Data Validation & Integrity:</strong> Built automated validation logic and scripts to verify multi-source geospatial data, improving data consistency and accuracy across system pipelines.</li>
+                <li><strong>Quality Engineering & Optimization:</strong> Led QA and data verification workflows for high-volume datasets, enforcing strict schema compliance and cutting data anomaly resolution time.</li>
+                <li><strong>Cross-Functional Collaboration:</strong> Partnered with engineering and cross-functional teams to debug edge-case data discrepancies, streamlining root-cause analysis and delivery cycles.</li>
+                <li><strong>Performance Recognition:</strong> Awarded <strong>Best Performer of the Month</strong> for maintaining high engineering output standards, strict adherence to delivery timelines, and top-tier accuracy.</li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section light-background">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Projects</h2>
+        <p>Selected full-stack web applications and academic projects built to solve real-world problems.</p>
+      </div>
+
+      <div class="container">
+
+        <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-content h-100 position-relative">
+              <div class="portfolio-buttons position-absolute top-0 start-0 end-0 p-3 d-flex gap-2" style="z-index: 10;">
+                <a href="https://github.com" target="_blank" class="btn btn-sm btn-primary" title="View GitHub Repository">
+                  <i class="bi bi-github"></i> GitHub
+                </a>
+                <a href="portfolio-details.html?project=read-lab" class="btn btn-sm btn-info" title="View More Details">
+                  <i class="bi bi-arrow-right"></i> More Details
+                </a>
+              </div>
+              <img src="assets/img/portfolio/lib1.jpg" class="img-fluid" alt="Read Lab project">
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-content h-100 position-relative">
+              <div class="portfolio-buttons position-absolute top-0 start-0 end-0 p-3 d-flex gap-2" style="z-index: 10;">
+                <a href="https://github.com" target="_blank" class="btn btn-sm btn-primary" title="View GitHub Repository">
+                  <i class="bi bi-github"></i> GitHub
+                </a>
+                <a href="portfolio-details-noteshub.html" class="btn btn-sm btn-info" title="View More Details">
+                  <i class="bi bi-arrow-right"></i> More Details
+                </a>
+              </div>
+              <img src="assets/img/portfolio/note1.jpg" class="img-fluid" alt="NotesHub project">
+             
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-content h-100 position-relative">
+              <div class="portfolio-buttons position-absolute top-0 start-0 end-0 p-3 d-flex gap-2" style="z-index: 10;">
+                <a href="https://github.com" target="_blank" class="btn btn-sm btn-primary" title="View GitHub Repository">
+                  <i class="bi bi-github"></i> GitHub
+                </a>
+                <a href="portfolio-details-chatapp.html" class="btn btn-sm btn-info" title="View More Details">
+                  <i class="bi bi-arrow-right"></i> More Details
+                </a>
+              </div>
+              <img src="assets/img/portfolio/chat1.png" class="img-fluid" alt="Chat app project">
+             
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="services section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Certificates</h2>
+        <p>Professional certifications and credentials validating technical expertise.</p>
+      </div>
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="certificate-card card border-0 h-100 shadow-sm" style="cursor: pointer; transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 25px rgba(0, 0, 0, 0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 0 20px rgba(0, 0, 0, 0.1)';" onclick="window.open('https://www.hackerrank.com/certificates/883a556bbe16', '_blank')">
+              <div class="card-body text-center">
+                <div class="certificate-icon mb-3" style="font-size: 3rem; color: #149ddd;">
+                  <i class="bi bi-award"></i>
+                </div>
+                <h5 class="card-title">SQL Basic</h5>
+                <p class="card-text text-muted small mb-0">Issued by HackerRank</p>
+                <p class="card-text text-muted small">2026</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="certificate-card card border-0 h-100 shadow-sm" style="cursor: pointer; transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 25px rgba(0, 0, 0, 0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 0 20px rgba(0, 0, 0, 0.1)';" onclick="window.open('https://tcsglobal.udemy.com/certificate/UC-21711c33-a4e2-4da6-9ce8-8c881ae113dc/', '_blank')">
+              <div class="card-body text-center">
+                <div class="certificate-icon mb-3" style="font-size: 3rem; color: #149ddd;">
+                  <i class="bi bi-award"></i>
+                </div>
+                <h5 class="card-title">Introduction to OpenAI API & ChatGPT API for Developers</h5>
+                <p class="card-text text-muted small mb-0">Issued by Udemy</p>
+                <p class="card-text text-muted small">2025</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="certificate-card card border-0 h-100 shadow-sm" style="cursor: pointer; transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 25px rgba(0, 0, 0, 0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 0 20px rgba(0, 0, 0, 0.1)';" onclick="window.open('https://tcsglobal.udemy.com/certificate/UC-4a561b45-d360-49b5-ace5-40a46827d3d9/', '_blank')">
+              <div class="card-body text-center">
+                <div class="certificate-icon mb-3" style="font-size: 3rem; color: #149ddd;">
+                  <i class="bi bi-award"></i>
+                </div>
+                <h5 class="card-title">The Complete Prompt Engineering for AI Bootcamp </h5>
+                <p class="card-text text-muted small mb-0">Issued by Udemy</p>
+                <p class="card-text text-muted small">2025</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Certificates Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Let's build something together.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Present Address</h3>
+                  <p>Hyderabad, Telangana</p>
+                </div>
+              </div>
+
+              <a href="tel:+916200468014" style="text-decoration: none; color: inherit;">
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bi bi-telephone flex-shrink-0"></i>
+                  <div>
+                    <h3>Call me</h3>
+                    <p>+91 6200468014</p>
+                  </div>
+                </div>
+              </a>
+
+              <a href="mailto:deepakumar6988@gmail.com" style="text-decoration: none; color: inherit;">
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bi bi-envelope flex-shrink-0"></i>
+                  <div>
+                    <h3>Email me</h3>
+                    <p>deepakumar6988@gmail.com</p>
+                  </div>
+                </div>
+              </a>
+
+              <a href="https://www.linkedin.com/in/deepak5402" target="_blank" rel="noreferrer" style="text-decoration: none; color: inherit;">
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+                  <i class="bi bi-linkedin flex-shrink-0"></i>
+                  <div>
+                    <h3>LinkedIn</h3>
+                    <p>linkedin.com/in/deepak5402</p>
+                  </div>
+                </div>
+              </a>
+
+              <a href="https://github.com/deepak6988" target="_blank" rel="noreferrer" style="text-decoration: none; color: inherit;">
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="600">
+                  <i class="bi bi-github flex-shrink-0"></i>
+                  <div>
+                    <h3>GitHub</h3>
+                    <p>github.com/deepak6988</p>
+                  </div>
+                </div>
+              </a>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Deepak Kumar</strong> <span>All Rights Reserved</span>
+        </p>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a> -->
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
